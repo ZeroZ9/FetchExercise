@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		096106F82A9D1C7400E91FB5 /* FetchExerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096106F72A9D1C7400E91FB5 /* FetchExerciseApp.swift */; };
-		096106FA2A9D1C7400E91FB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096106F92A9D1C7400E91FB5 /* ContentView.swift */; };
+		096106FA2A9D1C7400E91FB5 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096106F92A9D1C7400E91FB5 /* RecipeListView.swift */; };
 		096106FC2A9D1C7500E91FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096106FB2A9D1C7500E91FB5 /* Assets.xcassets */; };
 		096106FF2A9D1C7500E91FB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096106FE2A9D1C7500E91FB5 /* Preview Assets.xcassets */; };
 		096107092A9D1C7500E91FB5 /* FetchExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096107082A9D1C7500E91FB5 /* FetchExerciseTests.swift */; };
 		096107132A9D1C7500E91FB5 /* FetchExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096107122A9D1C7500E91FB5 /* FetchExerciseUITests.swift */; };
 		096107152A9D1C7500E91FB5 /* FetchExerciseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096107142A9D1C7500E91FB5 /* FetchExerciseUITestsLaunchTests.swift */; };
+		096107252A9D212300E91FB5 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096107242A9D212300E91FB5 /* Recipe.swift */; };
+		096107272A9D21F500E91FB5 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096107262A9D21F500E91FB5 /* RecipeModel.swift */; };
+		0961072A2A9D26FA00E91FB5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096107292A9D26FA00E91FB5 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		096106F42A9D1C7400E91FB5 /* FetchExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		096106F72A9D1C7400E91FB5 /* FetchExerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExerciseApp.swift; sourceTree = "<group>"; };
-		096106F92A9D1C7400E91FB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		096106F92A9D1C7400E91FB5 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		096106FB2A9D1C7500E91FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		096106FE2A9D1C7500E91FB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		096107042A9D1C7500E91FB5 /* FetchExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		0961070E2A9D1C7500E91FB5 /* FetchExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		096107122A9D1C7500E91FB5 /* FetchExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExerciseUITests.swift; sourceTree = "<group>"; };
 		096107142A9D1C7500E91FB5 /* FetchExerciseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExerciseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		096107242A9D212300E91FB5 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		096107262A9D21F500E91FB5 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		096107292A9D26FA00E91FB5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				096106F72A9D1C7400E91FB5 /* FetchExerciseApp.swift */,
-				096106F92A9D1C7400E91FB5 /* ContentView.swift */,
+				096107222A9D1D8400E91FB5 /* Views */,
+				096107232A9D1D8C00E91FB5 /* ViewModels */,
+				096107212A9D1D7A00E91FB5 /* Model */,
+				096107282A9D26E600E91FB5 /* Helpers */,
 				096106FB2A9D1C7500E91FB5 /* Assets.xcassets */,
 				096106FD2A9D1C7500E91FB5 /* Preview Content */,
 			);
@@ -125,6 +134,38 @@
 				096107142A9D1C7500E91FB5 /* FetchExerciseUITestsLaunchTests.swift */,
 			);
 			path = FetchExerciseUITests;
+			sourceTree = "<group>";
+		};
+		096107212A9D1D7A00E91FB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				096107242A9D212300E91FB5 /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		096107222A9D1D8400E91FB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				096106F92A9D1C7400E91FB5 /* RecipeListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		096107232A9D1D8C00E91FB5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				096107262A9D21F500E91FB5 /* RecipeModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		096107282A9D26E600E91FB5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				096107292A9D26FA00E91FB5 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				096106FA2A9D1C7400E91FB5 /* ContentView.swift in Sources */,
+				0961072A2A9D26FA00E91FB5 /* Constants.swift in Sources */,
+				096107252A9D212300E91FB5 /* Recipe.swift in Sources */,
+				096107272A9D21F500E91FB5 /* RecipeModel.swift in Sources */,
+				096106FA2A9D1C7400E91FB5 /* RecipeListView.swift in Sources */,
 				096106F82A9D1C7400E91FB5 /* FetchExerciseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
