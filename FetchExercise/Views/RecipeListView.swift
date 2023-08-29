@@ -17,10 +17,24 @@ struct RecipeListView: View {
                 NavigationLink {
                     DetailRecipeView(mealID: element.idMeal!)
                 } label: {
-                    Text(element.strMeal ?? "hihi")
+                    HStack{
+                        AsyncImage(url: URL(string: element.strMealThumb!)) { image in
+                            image
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                                .cornerRadius(10)
+                        } placeholder: {
+                             
+                        }
+
+                        Text(element.strMeal ?? "hihi")
+                    }
                 }
+                .listRowSeparator(.hidden)
             }
-            .navigationTitle("Recipte")
+            .navigationTitle("Dessert Menu")
+            
         }
     }
 }
