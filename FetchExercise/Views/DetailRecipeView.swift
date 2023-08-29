@@ -21,13 +21,22 @@ struct DetailRecipeView: View {
                 Divider()
                 Text(instruction)
                 Divider()
-                Text("Ingredients")
-                Divider()
-                ForEach(model.ingredientsList ?? [String](), id:\.self) { ingredient in
-                    Text(ingredient)
+                HStack(alignment: .top){
+                    VStack{
+                        Text("Ingredients")
+                        Divider()
+                        ForEach(model.ingredientsList ?? [String](), id:\.self) { ingredient in
+                            Text(ingredient)
+                        }
+                    }
+                    VStack{
+                        Text("Measures")
+                        Divider()
+                        ForEach(model.measuresList ?? [String](), id:\.self) { measure in
+                            Text(measure)
+                        }
+                    }
                 }
-                Text("Measure")
-                Divider()
             }
             .padding()
 
