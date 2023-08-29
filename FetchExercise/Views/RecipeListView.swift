@@ -15,7 +15,7 @@ struct RecipeListView: View {
         NavigationStack {
             List(model.recipes.meals ?? [Recipe]()) { element  in
                 NavigationLink {
-                    Text("mlem")
+                    DetailRecipeView(mealID: element.idMeal!)
                 } label: {
                     Text(element.strMeal ?? "hihi")
                 }
